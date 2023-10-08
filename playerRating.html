@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>تقييم اللاعبين</title>
+    <style>
+      .rate-title {
+        direction: rtl;
+        background-color: #f5d2c3;
+        margin: 10px 0;
+      }
+      .comment {
+        direction: rtl;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .content {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .approval,
+      .disapproval {
+        font-size: 14px;
+        color: #888;
+      }
+
+      .approval-icon,
+      .disapproval-icon {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      .approval-count,
+      .disapproval-count {
+        margin-right: 3px;
+      }
+
+      .approval-icon:hover,
+      .disapproval-icon:hover {
+        color: #ff5252;
+      }
+      @media screen and (max-width: 480px) {
+        .logo img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .comment {
+          padding: 6px;
+          margin-bottom: 12px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .content {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+          <a href="index.html">
+            <img src="images/logo-removebg.png" alt=" Logo"
+          /></a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a href="news.html">الأخبار</a></li>
+            <li class="nav-item"><a href="matches.html">المباريات</a></li>
+            <li class="nav-item"><a href="lineup.html">اللاعبين</a></li>
+            <li class="nav-item"><a href="playerRating.html">التقييم</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="rate-title">
+      <h1>قيم اللاعبين</h1>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>ميروسلاف سوكوب</h3></div>
+      <div class="content">
+        <p>مدرب</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>علي فضل عباس</h3></div>
+      <div class="content">
+        <p>المركز: حارس</p>
+        <p>رقم القميص: 23</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>محمد أمان</h3></div>
+      <div class="content">
+        <p>المركز: حارس</p>
+        <p>رقم القميص: 1</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>أكرم البحري</h3></div>
+      <div class="content">
+        <p>المركز: دفاع</p>
+        <p>رقم القميص: 5</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>مدير عبدربه</h3></div>
+      <div class="content">
+        <p>المركز: دفاع</p>
+        <p>رقم القميص: 4</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>أنيس سالم المعاري</h3></div>
+      <div class="content">
+        <p>المركز: وسط</p>
+        <p>رقم القميص: 8</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>ناصر محمدوه الغواشي</h3></div>
+      <div class="content">
+        <p>المركز: وسط</p>
+        <p>رقم القميص: 10</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>أحمد السروري</h3></div>
+      <div class="content">
+        <p>المركز: هجوم</p>
+        <p>رقم القميص: 7</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+    <div class="comment">
+      <span class="logo"
+        ><img src="images/default-player-picture.png" alt="pphoto"
+      /></span>
+      <div class="name"><h3>عمر الداحي</h3></div>
+      <div class="content">
+        <p>المركز: هجوم</p>
+        <p>رقم القميص: 9</p>
+      </div>
+      <div class="approval">
+        <span class="approval-icon" onclick="incrementCounter(this)">❤️</span>
+        <span class="approval-count">0</span> Like
+      </div>
+      <div class="disapproval">
+        <span class="approval-icon" onclick="incrementCounter(this)">👎</span>
+        <span class="approval-count">0</span> Unlike
+      </div>
+    </div>
+
+    <script>
+      function incrementCounter(element) {
+        var countElement = element.nextElementSibling;
+        var count = parseInt(countElement.textContent);
+        count++;
+        countElement.textContent = count;
+      }
+    </script>
+    <footer class="footer">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2023 المنتخب اليمني</p>
+        <nav>
+          <a href="index.html">الصفحة الرئيسية</a> |
+          <a href="matches.html">المباريات</a> |
+          <a href="news.html">الأخبار</a> |
+          <a href="lineup.html">المنتخب الوطني</a> |
+          <a href="playerRating.html">التقييم</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

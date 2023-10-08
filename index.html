@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+   
+    <style>
+      .mySlides {
+        display: none;
+      }
+      .mySlides img {
+        width: 100%;
+        height: 375px;
+      }
+      .slideshow-container {
+        position: relative;
+    max-width: 100%;
+    margin: 0%;
+    padding: 5%;
+    box-shadow: 0 2px 5px rgba(200, 0, 0, 0.2);
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 5%;
+      }
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        position: relative;
+    bottom: 63px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        width: -webkit-fill-available;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 768px) {
+        .text {
+          font-size: 11px;
+          font-weight: 400;
+          bottom: 40px;
+        }
+        .slideshow-container img {
+          vertical-align: middle;
+          width: 100%;
+          height: 250px;
+          left: 0;
+        }
+      }
+    </style>
+
+    <title>الرئيسية</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+         <img src="images/logo-removebg.png" alt=" Logo" />
+         
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a href="news.html">الأخبار</a></li>
+            <li class="nav-item"><a href="matches.html">المباريات</a></li>
+            <li class="nav-item"><a href="lineup.html">اللاعبين</a></li>
+            <li class="nav-item"><a href="playerRating.html">التقييم</a></li>
+          
+           
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="headline" dir="rtl">
+      <h1>المنتخب اليمني لكرة القدم</h1>
+      <p>مواعيد المباريات والأخبار واللاعبين والتشكيل الأساسي للمنتخب اليمني وأكثر تجدونه في هذا الموقع</p>
+     
+      </div>
+    </section>
+    <div class="title">
+      <h2>
+        المنتخب اليمني لكرة القدم
+      </h2>
+      <p>
+       
+تأسس المنتخب اليمني الأول في عام 1965، ولكنه لم يشارك في المسابقات الدولية بانتظام حتى العقد الأخير. تأثر تطور المنتخب بالعديد من التحديات السياسية والأمنية التي شهدتها اليمن على مر السنين.
+
+في السنوات الأخيرة، شهد المنتخب اليمني تحسنًا ملحوظًا في أدائه وظهوره في المسابقات الدولية. شارك في بطولة كأس الخليج العربي (خليجي) وكأس آسيا وتصفيات كأس العالم. تعتبر مشاركته في كأس آسيا 2019 في الإمارات العربية المتحدة أحد أبرز إنجازاته، حيث تمكّن المنتخب اليمني من التأهل للبطولة للمرة الأولى في تاريخه.
+
+تشتهر تشكيلة المنتخب اليمني بروحها القتالية والتكتيكية. يضم المنتخب لاعبين محترفين يلعبون في الدوريات الوطنية والدولية. ومع ذلك، مثل أي منتخب، يواجه التحديات المتعلقة بالتطوير البنيوي والبنية التحتية والتمويل.
+      </p>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/team1.jpg" alt="team" />
+        <div class="text">تابع اخبار المنتخب</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/team2.jpg" alt="team" />
+        <div class="text">مواعيد المباريات</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/team1.jpg" alt="team" />
+        <div class="text">قيم لاعبك المفضل</div>
+      </div>
+      <div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <section class="features">
+      <div class="feature-container">
+        <img src="images/team1.jpg" alt="team" />
+        <h2>تأهل المنتخب لكأس العرب نسخة 2026</h2>
+        <p>
+          أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+          تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+          المراكز الأخيرة من التصنيف. 
+        </p>
+      </div>
+
+      <div class="feature-container">
+        <img src="images/team2.jpg" alt="team " />
+        <h2>خروج اليمن من تصفيات كأس العالم</h2>
+        <p>
+          أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+          تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+          المراكز الأخيرة من التصنيف. 
+        </p>
+      </div>
+      <div class="feature-container">
+        <img src="images/team1.jpg" alt="team" />
+        <h2>مواعيد مباريات المنتخب</h2>
+        <p>
+          أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+          تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+          المراكز الأخيرة من التصنيف. 
+        </p>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+
+      showSlides();
+      function currentSlide(index) {
+        slideIndex = index;
+        showSlides();
+      }
+      function plusSlides(step) {
+        if (step < 0) {
+          slideIndex -= 2;
+
+          if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+        }
+
+        showSlides();
+      }
+      function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+    <footer class="footer">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2023 المنتخب اليمني</p>
+        <nav>
+          <a href="index.html">الصفحة الرئيسية</a> | <a href="matches.html">المباريات</a> |
+          <a href="news.html">الأخبار</a> | <a href="lineup.html">المنتخب الوطني</a> |
+          <a href="playerRating.html">التقييم</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

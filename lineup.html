@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>team-lineup</title>
+    <style>
+      .row-design {
+        background: linear-gradient(-45deg, green, white, green);
+        margin: 0 10%;
+      }
+      .container1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 40px;
+      }
+
+      .container4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 70px;
+      }
+
+      .container3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 70px;
+      }
+
+      .container-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 70px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+      @media (max-width: 768px) {
+        .item {
+          width: 50px;
+          height: 50px;
+        }
+        .container1,
+        .container4,
+        .container3,
+        .container-3 {
+          grid-gap: 0;
+        }
+      }
+      .line-up {
+        display: flex;
+        justify-content: space-between;
+      }
+      .line-up ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .line-up li {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .line-up img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .line-up h3 {
+        margin: 0;
+        color: #a90808;
+      }
+
+      .line-up p {
+        margin: 5px 0;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+          <a href="index.html">
+            <img src="images/logo-removebg.png" alt=" Logo"
+          /></a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a href="news.html">الأخبار</a></li>
+            <li class="nav-item"><a href="matches.html">المباريات</a></li>
+            <li class="nav-item"><a href="lineup.html">اللاعبين</a></li>
+            <li class="nav-item"><a href="playerRating.html">التقييم</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <h2
+      style="
+        padding: 20px;
+        margin: 30px 0px;
+        color: blanchedalmond;
+        background-color: black;
+        border-radius: 10px;
+      "
+    >
+      التشكيلة الاساسية للمنتخب اليمني
+    </h2>
+    <section class="row-design">
+      <div class="container1">
+        <img
+          src="images/default-player-picture.png"
+          alt="صورة 1"
+          class="item"
+        />
+        <span>محمد امان 1</span>
+      </div>
+      <div class="container4">
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>جار الله الزغاري</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>عمر طلال</span>
+        </div>
+
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>عمر شارد</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>أكرم البحري</span>
+        </div>
+      </div>
+      <div class="container3">
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>حمزة حنش</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>احمد السروري</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>ناصر محمد</span>
+        </div>
+      </div>
+      <div class="container-3">
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>عمر الضاحي</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 10"
+            class="item"
+          />
+          <span> عمر الداحي</span>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="images/default-player-picture.png"
+            alt="صورة 2"
+            class="item"
+          />
+          <span>انيس المعاري</span>
+        </div>
+      </div>
+    </section>
+    <h2
+      style="
+        padding: 20px;
+        margin: 30px 3px;
+        color: blanchedalmond;
+        background-color: black;
+        border-radius: 10px;
+      "
+    >
+      قائمة لاعبي المنتخب اليمني
+    </h2>
+    <section class="line-up">
+      <ul>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player" />
+          <h3>ميروسلاف سوكوب</h3>
+          <p>مدرب</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>علي فضل عباس</h3>
+          <p>المركز: حارس</p>
+          <p>رقم القميص: 23</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>محمد أمان</h3>
+          <p>المركز: حارس</p>
+          <p>رقم القميص: 1</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>سالم الهارش</h3>
+          <p>المركز: حارس</p>
+          <p>رقم القميص: 22</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>أحمد محمد الوجيه</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 16</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>أكرم البحري</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 5</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>عمرو طلال لطف</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 6</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>حمزة الريمي</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 2</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>هارون يوسف الزبيدي</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 3</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>عماد حمود الجديمة</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 17</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>جار الله الزغاري</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 21</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>مدير عبدربه</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 4</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>عمر عبد الله شارد</h3>
+          <p>المركز: دفاع</p>
+          <p>رقم القميص: 13</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>أنيس سالم المعاري</h3>
+          <p>المركز: وسط</p>
+          <p>رقم القميص: 8</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>حمزة محمد حنش</h3>
+          <p>المركز: وسط</p>
+          <p>رقم القميص: 20</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>محمد فوزي باحميد</h3>
+          <p>المركز: وسط</p>
+          <p>رقم القميص: 14</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>محمد حسن الطيري</h3>
+          <p>المركز: وسط</p>
+          <p>رقم القميص: 15</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>ناصر محمدوه الغواشي</h3>
+          <p>المركز: وسط</p>
+          <p>رقم القميص: 10</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>أحمد السروري</h3>
+          <p>المركز: هجوم</p>
+          <p>رقم القميص: 7</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>أحمد ماهر</h3>
+          <p>المركز: هجوم</p>
+          <p>رقم القميص: 12</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>علي عبده العمري</h3>
+          <p>المركز: هجوم</p>
+          <p>رقم القميص: 19</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>محمد عبد الله الداحي</h3>
+          <p>المركز: هجوم</p>
+          <p>رقم القميص: 18</p>
+        </li>
+        <li>
+          <img src="images/default-player-picture.png" alt="Player 1" />
+          <h3>عمر الداحي</h3>
+          <p>المركز: هجوم</p>
+          <p>رقم القميص: 9</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2023 المنتخب اليمني</p>
+        <nav>
+          <a href="index.html">الصفحة الرئيسية</a> |
+          <a href="matches.html">المباريات</a> |
+          <a href="news.html">الأخبار</a> |
+          <a href="lineup.html">المنتخب الوطني</a> |
+          <a href="playerRating.html">التقييم</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

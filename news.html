@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      main {
+        padding: 20px;
+      }
+
+      .date {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .news-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+      }
+
+      .news-content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .content {
+        margin-top: 0;
+        color: #000;
+      }
+
+      @media (min-width: 768px) {
+        .news-content {
+          grid-template-columns: 1fr 2fr;
+        }
+        .news-content img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+    <title>اخبار المنتخب</title>
+  </head>
+  <body>
+    <header>
+      <div class="page-wrapper">
+        <div class="nav-wrapper">
+          <div class="grad-bar"></div>
+          <nav class="navbar">
+            <a href="index.html">
+              <img src="images/logo-removebg.png" alt=" Logo"
+            /></a>
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+              <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+              <li class="nav-item"><a href="news.html">الأخبار</a></li>
+              <li class="nav-item"><a href="matches.html">المباريات</a></li>
+              <li class="nav-item"><a href="lineup.html">اللاعبين</a></li>
+              <li class="nav-item"><a href="playerRating.html">التقييم</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1
+        style="
+          background-color: black;
+          color: #fff;
+          border-radius: 10px;
+          text-align: center;
+        "
+      >
+        الأخبار
+      </h1>
+      <section class="news">
+        <div class="news-header">
+          <h2>20 لاعبا في معسكر اليمن بالسعودية</h2>
+          <p class="date">تاريخ النشر: 18 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team2.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أعلن التشيكي سكوب، المدير الفني للمنتخب اليمني، اليوم الأربعاء،
+            قائمة اللاعبين المغادرين إلى السعودية يوم الجمعة المقبل، استعدادا
+            لمباراة سيريلانكا في التصفيات المشتركة لكأس العالم 2026 وكأس آسيا
+            2027.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>الاتحاد اليمني يوقع اتفاقية مع شركة تسويق</h2>
+          <p class="date">تاريخ النشر: 17 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            وقع الاتحاد كرة القدم، اليوم الجمعة، اتفاقية بيع حقوق النقل
+            التلفزيوني والإعلانات والتذاكر الخاصة بمباريات المنتخب الأول، مع
+            شركة برو انترناشيونال للتسويق. وشارك المنتخب اليمني في التصفيات
+            المشتركة لبطولتي كأس العالم 2026، وكأس آسيا 2027.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف. وتم تقسيم آخر 20 منتخبا في التصنيف إلى
+            10 أزواج، حيث يلعب كل منتخب مباراتين (ذهابا وإيابا) في 12 و17
+            أكتوبر/تشرين أول المقبل على التوالي، ليتأهل 10 فائزين إلى الجولة
+            الثانية.
+          </p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-header">
+          <h2>اليمن ضد سريلانكا في المرحلة الأولى من تصفيات كأس العالم</h2>
+          <p class="date">تاريخ النشر: 16 سبتمبر 2023</p>
+        </div>
+        <div class="news-content">
+          <img src="images/team1.jpg" alt="صورة الخبر" />
+          <p class="content">
+            أجريت اليوم الخميس في العاصمة الماليزية كوالالمبور، مراسم قرعة
+            تصفيات كأس العالم وآسيا المشتركة للدور الأول، للمنتخبات التي تحتل
+            المراكز الأخيرة من التصنيف. وتم تقسيم آخر 20 منتخبا في التصنيف إلى
+            10 أزواج، حيث يلعب كل منتخب مباراتين (ذهابا وإيابا) في 12 و17
+            أكتوبر/تشرين أول المقبل على التوالي، ليتأهل 10 فائزين إلى الجولة
+            الثانية، حيث سيكون بانتظارهم 26 منتخبا آسيويا. وأسفرت القرعة عن وقوع
+            منتخب اليمن في مواجهة مباشرة مع سريلانكا، إذ أن اليمن هو المنتخب
+            العربي الوحيد المنافس في المرحلة الأولى.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2023 المنتخب اليمني</p>
+        <nav>
+          <a href="index.html">الصفحة الرئيسية</a> |
+          <a href="matches.html">المباريات</a> |
+          <a href="news.html">الأخبار</a> |
+          <a href="lineup.html">المنتخب الوطني</a> |
+          <a href="playerRating.html">التقييم</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
